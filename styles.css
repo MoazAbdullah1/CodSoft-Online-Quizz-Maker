@@ -128,14 +128,9 @@ input[type="radio"] {
   
   .cards-footer {
     padding: 20px;
-    background-color: #f9f9f9;
+    background-color: #7d7d7d;
   }
   
-  .prices {
-    font-size: 18px;
-    font-weight: bold;
-    color: #FF9800;
-  }
   
   .packages-card .cta-buttons {
     /* display: block; */
@@ -156,5 +151,23 @@ input[type="radio"] {
   }
 
 
+
+
+.b{
+  background-color: #FF9800;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+
+}
+
+.b:hover{
+  background-color: #FFB74D;
+}
 
 
