@@ -3,37 +3,37 @@ document.addEventListener("DOMContentLoaded", () => {
     const takeQuizBtn = document.getElementById("takeQuizBtn");
 
     createQuizBtn.addEventListener("click", () => {
-        // Redirect to quiz creation page or open a modal
+        
     });
 
     takeQuizBtn.addEventListener("click", () => {
         
-        // Redirect to quiz listing page or open a modal
+        
     });
 });
 
 
 
-// function checkAnswer() {
+function checkAnswer() {
             
-//     var selectedOption = document.querySelector('input[name="answer"]:checked');
+    var selectedOption = document.querySelector('input[name="answer"]:checked');
     
     
-//     if (selectedOption) {
-//         var userAnswer = selectedOption.value;
+    if (selectedOption) {
+        var userAnswer = selectedOption.value;
         
-//         var correctAnswer = "C";
+        var correctAnswer = "C";
 
         
-//         if (userAnswer === correctAnswer) {
-//             alert("Correct answer!");
-//         } else {
-//             alert("Incorrect answer. Try again.");
-//         }
-//     } else {
-//         alert("Please select an answer.");
-//     }
-// }
+        if (userAnswer === correctAnswer) {
+            alert("Correct answer!");
+        } else {
+            alert("Incorrect answer. Try again.");
+        }
+    } else {
+        alert("Please select an answer.");
+    }
+}
 
 
 
@@ -60,11 +60,14 @@ document.addEventListener("DOMContentLoaded", () => {
         function showQuestion() {
             if (currentQuestion < questions.length) {
                 var questionObj = questions[currentQuestion];
+
                 var questionCard = document.getElementById("question-card");
+
                 questionCard.innerHTML = `
                     <h1>Multiple Choice Question</h1>
                     <p><strong>Question:</strong> ${questionObj.question}</p>
                     <form>
+
                         ${questionObj.options.map((option, index) => `
                             <label>
                                 <input type="radio" name="answer" value="${String.fromCharCode(65 + index)}"> ${String.fromCharCode(65 + index)}) ${option}
@@ -74,11 +77,16 @@ document.addEventListener("DOMContentLoaded", () => {
                         <button type="button" onclick="checkAnswer()">Submit Answer</button>
                     </form>
                 `;
-            } else {
+
+            }
+            
+            else {
                 var questionCard = document.getElementById("question-card");
                 questionCard.innerHTML = "<h1>Quiz Complete</h1><p>Congratulations! You have completed the quiz.</p>";
             }
         }
+
+        
 
         function checkAnswer() {
             var selectedOption = document.querySelector('input[name="answer"]:checked');
@@ -101,7 +109,8 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         }
 
-        // Show the first question when the page loads
+        
+
         window.onload = showQuestion;
 
 

@@ -169,5 +169,28 @@ input[type="radio"] {
 .b:hover{
   background-color: #FFB74D;
 }
+.h{
+  color: white;
+  font-size: 32px;
+}
+
+.q{
+  background-color: #333;
+}
+
+
+
+.input-box {
+  width: 300px;
+  padding: 10px;
+  border: 3px solid #FFB74D;
+  border-radius: 50px;
+  font-size: 16px;
+}
+
+
+
+
+
 
 
