@@ -208,6 +208,7 @@ document.addEventListener("DOMContentLoaded", () => {
   createQuizBtn.addEventListener("click", () => {});
 
   takeQuizBtn.addEventListener("click", () => {});
+  
 });
 
 function checkAnswer() {
