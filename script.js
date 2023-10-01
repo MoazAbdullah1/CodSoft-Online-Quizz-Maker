@@ -233,7 +233,9 @@ var currentQuestion = 0;
 var questions = [
   {
     question: "Which planet is known as the 'Red Planet'?",
+
     options: ["Earth", "Venus", "Mars", "Jupiter"],
+    
     correctAnswer: "C",
   },
   {
