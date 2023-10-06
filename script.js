@@ -215,6 +215,7 @@ function checkAnswer() {
   var selectedOption = document.querySelector('input[name="answer"]:checked');
 
   if (selectedOption) {
+    
     var userAnswer = selectedOption.value;
 
     var correctAnswer = "C";
